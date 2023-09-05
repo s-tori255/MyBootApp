@@ -51,7 +51,7 @@ public class HelloController {
 			res = new ModelAndView("redirect:/");
 		}else {
 			mav.setViewName("index");
-			mav.addObject("title", "Hello page");
+			mav.addObject("title", "Hello! page");
 			mav.addObject("msg","sorry, error is occured...");
 			Iterable<Person> list = repository.findAll();
 			mav.addObject("data",list);
